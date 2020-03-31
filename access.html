@@ -31,7 +31,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top display-1" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">UZMAN GSM</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="./img/Heyyo.png" height="40"></img></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars" style="font-size:18px;"></i>
       </button>
@@ -68,11 +68,11 @@
             <form>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required> 
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" maxlength="50"  placeholder="Email" required> 
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Şifre</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Şifre" required> 
+                    <input type="password" class="form-control" id="exampleInputPassword1" maxlength="10" placeholder="Şifre" required> 
                 </div>
                 <button type="submit" class="btn btn-outline btn-xl js-scroll-trigger float-right m-3" style="color:black;border:1px solid black;">GİRİŞ</button>
             </form>
@@ -80,10 +80,18 @@
         <div class="col-lg-5 m-4" style="border: 1px solid black;">
             <h1 class="mt-5 mb-5">Kullanıcı Girişi</h1>
             <form>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Takip No</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Takip No" maxlength="10" required> 
-                </div>
+              <div class="form-group">
+                <label for="exampleInputName2">Ad</label>
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Ad" maxlength="50" required> 
+              </div>
+              <div class="form-group">
+                <label for="exampleInputSurname2">Soyad</label>
+                <input type="text" class="form-control" id="exampleInputSurname2" placeholder="Soyad" maxlength="50" required> 
+              </div>  
+              <div class="form-group">
+                    <label for="exampleInputPassword2">Takip No</label>
+                    <input type="text" class="form-control" id="exampleInputPassword2" placeholder="Takip No" maxlength="10" required> 
+                </div>  
                 <button type="submit" class="btn btn-outline btn-xl js-scroll-trigger float-right m-3" style="color:black;border:1px solid black;">GÖRÜNTÜLE</button>
             </form>
         </div>
