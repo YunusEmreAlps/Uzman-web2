@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<!-- Turkish -->
+<html lang="tr">
+  <head>
+    <!-- Metadata is data (information) about data. -->
+    <!-- Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- It is shown in the browser's title bar or in the page's tab. -->
+    <title>UZMAN GSM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../device-mockups/device-mockups.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/login.css" rel="stylesheet">
+  </head>
+  <body class="light" id="page-top">
+    <div id="loader" class="loadcenter"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">UZMAN GSM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!-- About -->
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style="font-size: small;" href="../index.html#about">Hakkımızda</a>
+            </li>
+            <!-- About -->
+            <!-- Our Services -->
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style="font-size: small;" href="../index.html#ourservices">Hizmetlerimiz</a>
+            </li>
+            <!-- Our Services -->
+            <!-- Brands -->
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style="font-size: small;" href="../index.html#product">Ürünler</a>
+            </li>
+            <!-- Brands -->
+            <!-- Device Tracker -->
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style="font-size: small;" href="login.php">Cihaz Takip Sistemi</a>
+            </li>
+            <!-- Device Tracker-->
+            <!-- Contact -->
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style="font-size: small;" href="../index.html#contactus">İletişim</a>
+            </li>
+            <!-- Contact -->
+            <!-- Language -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="font-size:small;" id="languageselector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dil</a>
+              <div class="dropdown-menu text-center" aria-labelledby="languageselector">
+                <a class="dropdown-item" href="login.html">Türkçe</a>
+                <a class="dropdown-item" href="loginen.html">English</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation Bar -->
+
+    <!-- Header -->
+    <header class="masthead" id="devicetracker">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-6 col-md-12 my-auto">
+            <!-- Business -->
+            <div class="shop-card w-100 mt-5">
+              <div class="title">TEKNİK SERVİS</div>
+              <div class="title" style="color: #FF3100;">GİRİŞİ</div>
+
+              <!-- Error Message -->
+              <!-- Error Message -->
+
+              <!-- Form -->
+              <form action="user.php" method="POST">
+                <!-- Email -->
+                <div class="form-group user-box mt-4 mb-3">
+                  <input type="email" maxlength="50" id="admin_email" name="email" required/>
+                  <label for="email-label">E-posta</label>
+                </div>
+                <!-- Email -->
+                <!-- Password -->
+                <div class="form-group user-box mb-3">
+                  <div class="input-group" id="show_hide_password">
+                    <input style="width: 90%;" type="password" maxlength="10" id="password" name="admin_password" required/>
+                    <label for="password-label">Şifre</label>
+                    <div class="input-group-addon ml-3 mt-3">
+                      <a href=""><i class="fa fa-eye-slash text-dark" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Password -->
+
+                <button type="submit" class="btn btn-block mt-3 mb-3 text-light"  style="border-color:#FF3100; background-color: #FF3100;" value="Submit" name="adminSubmit">Giriş</button>
+                <button type="reset" class="btn btn-block btn-primary mt-3 mb-3 text-light"  value="Reset">Reset</button>
+
+              </form>
+              <!-- Form -->
+
+            </div>
+            <!-- Business -->
+          </div>
+
+          <div class="col-lg-6 col-md-12 my-auto">
+            <!-- User -->
+            <div class="shop-card w-100 mt-5">
+              <div class="title">KULLANICI</div>
+              <div class="title" style="color: #FF3100;">GİRİŞİ</div>
+
+              <!-- Form -->
+              <form action="user.php" method="POST" id="userform" autocomplete="off">
+
+                <!-- Name -->
+                <div class="form-group user-box mt-4 mb-3">
+                  <input type="text" maxlength="50" name="name" oninput="this.value = this.value.toUpperCase()" required/>
+                  <label for="name-label">Ad</label>
+                </div>
+                <!-- Name -->
+                <!-- Surname -->
+                <div class="form-group user-box mb-3">
+                  <input type="text" maxlength="50" name="surname" oninput="this.value = this.value.toUpperCase()" required/>
+                  <label for="surname-label">Soyad</label>
+                </div>
+                <!-- Surname -->
+                <!-- Device Tracker Number -->
+                <div class="form-group user-box mb-3">
+                  <input type="text" maxlength="10" name="user_password" oninput="this.value = this.value.toUpperCase()" required/>
+                  <label for="surname-label">Takip numarası</label>
+                </div>
+                <!-- Device Tracker Number -->
+
+                <button type="submit" class="btn btn-block mt-3 mb-3 text-light"  style="border-color:#FF3100; background-color: #FF3100;" value="Submit" name="userSubmit">Görüntüle</button>
+                <button type="reset" class="btn btn-block btn-primary mt-3 mb-3 text-light"  value="Reset">Reset</button>
+              </form>
+              <!-- Form -->
+            </div>
+            <!-- User -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../js/new-age.min.js"></script>
+    <script>
+      document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+          document.querySelector(
+          "body").style.visibility = "hidden";
+          document.querySelector(
+          "#loader").style.visibility = "visible";
+        } else {
+          document.querySelector(
+          "#loader").style.display = "none";
+          document.querySelector(
+          "body").style.visibility = "visible";
+        }
+      };
+      // Show Password
+      $(document).ready(function() {
+          $("#show_hide_password a").on('click', function(event) {
+              event.preventDefault();
+              if($('#show_hide_password input').attr("type") == "text"){
+                  $('#show_hide_password input').attr('type', 'password');
+                  $('#show_hide_password i').addClass( "fa-eye-slash" );
+                  $('#show_hide_password i').removeClass( "fa-eye" );
+              }else if($('#show_hide_password input').attr("type") == "password"){
+                  $('#show_hide_password input').attr('type', 'text');
+                  $('#show_hide_password i').removeClass( "fa-eye-slash" );
+                  $('#show_hide_password i').addClass( "fa-eye" );
+              }
+          });
+      });
+      // Show Password
+    </script>
+  </body>
+</html>
